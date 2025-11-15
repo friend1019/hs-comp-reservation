@@ -1,0 +1,58 @@
+.cancel-dialog {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(15, 23, 42, 0.35);
+  padding: var(--spacing-lg);
+  z-index: 998;
+}
+
+.cancel-dialog__content {
+  width: min(36rem, 100%);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.cancel-dialog__title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.cancel-dialog__description {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.cancel-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+}
+
+.cancel-dialog__action {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border: 0.1rem solid transparent;
+  background-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.cancel-dialog__action--dismiss {
+  background-color: var(--color-border);
+}
+
+.cancel-dialog__action--confirm {
+  background-color: var(--color-danger);
+  color: var(--color-surface);
+}
+
+.cancel-dialog__action--confirm:hover {
+  background-color: #b71c1c;
+}

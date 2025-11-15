@@ -1,0 +1,11 @@
+.admin-route {
+  width: 100%;
+}
+
+.admin-route__unauthorized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32rem;
+  padding: var(--spacing-lg);
+}

@@ -1,0 +1,56 @@
+.calendar-grid {
+  background-color: var(--color-surface);
+  border: 0.1rem solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.calendar-grid__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.calendar-grid__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.calendar-grid__day {
+  border: 0.1rem solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  background-color: var(--color-surface);
+  text-align: left;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.calendar-grid__day:hover {
+  border-color: var(--color-primary);
+}
+
+.calendar-grid__day--selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.calendar-grid__day-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.calendar-grid__day-meta {
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+}
+
+.calendar-grid__empty {
+  margin: 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}

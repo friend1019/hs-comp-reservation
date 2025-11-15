@@ -1,0 +1,69 @@
+.reservation-card {
+  border: 0.1rem solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.reservation-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.reservation-card__title {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.reservation-card__status {
+  padding: 0 var(--spacing-sm);
+  border-radius: var(--radius-round);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.reservation-card__details {
+  display: grid;
+  gap: var(--spacing-xs);
+  margin: 0;
+}
+
+.reservation-card__row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.reservation-card__label {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.reservation-card__value {
+  margin: 0;
+}
+
+.reservation-card__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reservation-card__cancel-button {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border: 0.1rem solid var(--color-danger);
+  background-color: transparent;
+  color: var(--color-danger);
+}
+
+.reservation-card__cancel-button:hover {
+  background-color: rgba(211, 47, 47, 0.08);
+}

@@ -1,0 +1,56 @@
+.my-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.my-page__header {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  border: 0.1rem solid var(--color-border);
+}
+
+.my-page__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.my-page__profile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxs);
+  color: var(--color-text-secondary);
+}
+
+.my-page__profile-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--color-text-primary);
+}
+
+.my-page__profile-email,
+.my-page__profile-role {
+  font-size: 1.3rem;
+}
+
+.my-page__reservations {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.my-page__section-title {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.my-page__reservation-list {
+  display: grid;
+  gap: var(--spacing-md);
+}

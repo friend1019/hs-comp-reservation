@@ -1,0 +1,68 @@
+.time-slot-picker {
+  background-color: var(--color-surface);
+  border: 0.1rem solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.time-slot-picker__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.time-slot-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.time-slot-picker__option {
+  border: 0.1rem solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxs);
+  text-align: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.time-slot-picker__option--selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.time-slot-picker__option--booked {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+  background-color: rgba(211, 47, 47, 0.08);
+}
+
+.time-slot-picker__option--past {
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+  background-color: rgba(148, 163, 184, 0.12);
+}
+
+.time-slot-picker__label {
+  font-weight: 600;
+}
+
+.time-slot-picker__status {
+  font-size: 1.2rem;
+}
+
+.time-slot-picker__status--past {
+  color: var(--color-text-muted);
+}
+
+.time-slot-picker__empty {
+  margin: 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}

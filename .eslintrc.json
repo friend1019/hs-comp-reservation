@@ -1,0 +1,8 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
+}

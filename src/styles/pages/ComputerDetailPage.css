@@ -1,0 +1,56 @@
+.computer-detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.computer-detail-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxs);
+}
+
+.computer-detail-page__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.computer-detail-page__status {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.computer-detail-page__info {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 0.1rem solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.computer-detail-page__description {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.computer-detail-page__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+}
+
+.computer-detail-page__meta-item {
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border-radius: var(--radius-round);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.computer-detail-page__slots {
+  display: flex;
+}
